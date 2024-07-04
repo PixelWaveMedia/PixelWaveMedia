@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with Meyawo landing page.">
     <meta name="author" content="Devcrud">
-    <title>Meyawo Landing page | Free Bootstrap 4.3.x landing page</title>
+    <title>Ronan Mark - Multimedia Designer - </title>
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
@@ -18,7 +18,10 @@
     <!-- Page Navbar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="logo" href="#"><img src="./assets/imgs/pixel-logo.png" alt="PixelWave Media Logos"></a>
+            <a class="logo" href="#">
+                <img src="./assets/imgs/pixel-logo-white.png" alt="PixelWave Media Logos" class="white-logo">
+                <img src="./assets/imgs/pixel-logo.png" alt="PixelWave Media Logos" class="colored-logo">
+            </a>
             <ul class="nav">
                 <li class="item">
                     <a class="link" href="#home">Home</a>
@@ -445,6 +448,22 @@
 
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
+
+    <!-- Custom script to handle logo change on scroll -->
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if (scroll >= 20) {
+                    $('.white-logo').hide();
+                    $('.colored-logo').show();
+                } else {
+                    $('.white-logo').show();
+                    $('.colored-logo').hide();
+                }
+            });
+        });
+    </script>
 
 </body>
 
