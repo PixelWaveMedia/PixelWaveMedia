@@ -11642,6 +11642,11 @@ pre .code {
   color: #fff;
 }
 
+.logo img {
+  max-width: 14rem;
+  width: 100%;
+}
+
 .custom-navbar .container {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
