@@ -11642,8 +11642,13 @@ pre .code {
   color: #fff;
 }
 
-.logo img {
+.logo img.white-logo {
   max-width: 14rem;
+  width: 100%;
+}
+
+.logo img.colored-logo {
+  max-width: 12rem;
   width: 100%;
 }
 
