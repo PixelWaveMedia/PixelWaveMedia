@@ -11645,12 +11645,12 @@ pre .code {
 .logo img.white-logo {
   max-width: 14rem;
   width: 100%;
-  visibility: hidden;
 }
 
 .logo img.colored-logo {
   max-width: 12rem;
-  width: 100%;
+  width: 100%;  
+  visibility: hidden;
 }
 
 .custom-navbar .container {
