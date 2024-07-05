@@ -11650,7 +11650,7 @@ pre .code {
 .logo img.colored-logo {
   max-width: 12rem;
   width: 100%;  
-  visibility: hidden;
+  display: none;
 }
 
 .custom-navbar .container {
