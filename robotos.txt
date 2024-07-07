@@ -1,0 +1,30 @@
+# robots.txt for PixelWave Media
+
+# Block all web crawlers from specific folders
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /junk/
+
+# Allow Googlebot to access all content
+User-agent: Googlebot
+Disallow:
+
+# Allow Bingbot to access all content
+User-agent: Bingbot
+Disallow:
+
+# Block all web crawlers from accessing certain file types
+User-agent: *
+Disallow: /*.php$
+Disallow: /*.cgi$
+Disallow: /*.pl$
+Disallow: /*.txt$
+Disallow: /*.sh$
+
+# Sitemap location
+Sitemap: https://www.pixelwavemedia.com/sitemap.xml
+
+# Crawl-delay directive for all web crawlers (10 seconds)
+User-agent: *
+Crawl-delay: 10
