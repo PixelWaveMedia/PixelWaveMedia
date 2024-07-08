@@ -12235,3 +12235,122 @@ pre .code {
 }
 
 
+/* BLOG STYLES */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.post .container {
+  display: flex;
+  max-width: 1200px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+.post .container .content {
+  flex: 3;
+  background: #fff;
+  padding: 2em;
+  margin-right: 2em;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  max-width: 1200px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+.post .container .sidebar {
+  flex: 1;
+  background: #fff;
+  padding: 2em;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.post .container .sidebar h3 {
+  margin-top: 0;
+}
+
+.article-card {
+  display: flex;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1em;
+}
+
+.article-card img {
+  width: 80px;
+  height: 80px;
+  margin-right: 1em;
+}
+
+.card-content h4 {
+  margin: 0;
+}
+
+.card-content p {
+  margin: 0.5em 0;
+}
+
+.card-content a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.card-content a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+/* END OF BLOG STYLES */
+
+
+/* Essential Tools */
+.info .tool {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+.info .tool h2 {
+  color: #333;
+}
+.info .tool p {
+  margin: 10px 0;
+}
+.info .tool .description {
+  margin-bottom: 15px;
+}
+.info .tool .features {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* END Essential Tools */
+
+/* stunning portfolio */
+
+article {
+  margin-bottom: 40px;
+}
+article > section {
+  margin-bottom: 20px;
+}
+
+/* END Stunning Portfolio */
