@@ -12357,73 +12357,7 @@ article > section {
 
 /* END Stunning Portfolio */
 
-.header-content {
-  position: relative;
-  z-index: 2;
-}
 
-/* Post Content */
-.post {
-  padding: 50px 0;
-  background: #f9f9f9;
-}
-
-.post .container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.post h2 {
-  color: #333;
-}
-
-.post p {
-  color: #666;
-}
-
-.tool {
-  margin-bottom: 20px;
-}
-
-.tool h2 {
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
-
-.tool .description {
-  padding: 10px;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-/* Footer */
-.page-footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .custom-navbar .nav {
-      display: none;
-  }
-
-  .hamburger {
-      display: block;
-      color: #fff;
-      font-size: 20px;
-      cursor: pointer;
-  }
-
-  .header {
-      padding: 50px 0;
-  }
-}
 
 @media (max-width: 576px) {
   .post .container {
