@@ -12279,6 +12279,7 @@ header {
   margin-bottom: 1em;
   border-bottom: 1px solid #ccc;
   padding-bottom: 1em;
+  flex-direction: column;
 }
 
 .article-card img {
