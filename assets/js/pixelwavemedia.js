@@ -18,35 +18,8 @@ let articlesMetadata = {
     }
 };
 
-function swapContent(articleId) {
-    // Get references to the main section and the sidebar
-    let main = document.getElementById('main');
-    let sidebar = document.getElementById('sidebar');
 
-    // Get the article in the main section that corresponds to the clicked article
-    let articleInMain = document.getElementById(articleId);
 
-    // Move the current content in the main section back to the sidebar
-    let currentMainContent = main.innerHTML;
-    let sidebarArticle = document.createElement('div');
-    sidebarArticle.className = 'article';
-    sidebarArticle.innerHTML = currentMainContent;
-    sidebar.appendChild(sidebarArticle);
-
-    // Replace the content in the main section with the clicked article's content
-    main.innerHTML = articleInMain.innerHTML;
-
-    // Remove the clicked article from the sidebar
-    let clickedArticle = document.getElementById(articleId);
-    sidebar.removeChild(clickedArticle);
-
-    // Update title and meta description
-    document.title = articlesMetadata[articleId].title;
-    let metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-        metaDescription.setAttribute('content', articlesMetadata[articleId].description);
-    }
-}
 
 
 // smooth scroll

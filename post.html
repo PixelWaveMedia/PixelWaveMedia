@@ -16,6 +16,8 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bulbolsarado.github.io/PixelWaveMedia/">
     <meta property="og:image" content="https://bulbolsarado.github.io/PixelWaveMedia/assets/imgs/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="PixelWave Media">
 
     <link rel="canonical" href="https://bulbolsarado.github.io/PixelWaveMedia/">
@@ -105,6 +107,40 @@
                 .catch(error => console.error('Error loading article:', error));
         }
     </script>    
+    <script>
+        // Function to load article content dynamically
+        function loadArticle(url) {
+            fetch(url)
+                .then(response => response.text())
+                .then(html => {
+                    document.querySelector('.content').innerHTML = html; // Load clicked article into main section
+                    document.querySelectorAll('.article-card').forEach(card => {
+                        card.addEventListener('click', function() {
+                            loadArticle(this.dataset.url); // Load article from sidebar on click
+                            this.style.display = 'none'; // Hide the clicked article in the sidebar
+                        });
+                    });
+                })
+                .catch(error => console.error('Error loading article:', error));
+        }
+    
+        // Initialize the sidebar articles
+        document.querySelectorAll('.article-card').forEach(card => {
+            card.addEventListener('click', function() {
+                loadArticle(this.dataset.url); // Load article from sidebar on click
+                this.style.display = 'none'; // Hide the clicked article in the sidebar
+            });
+        });
+    
+        // Function to go back to the sidebar when clicking on the main content
+        function showSidebar() {
+            document.querySelector('.sidebar').style.display = 'block'; // Show sidebar
+            document.querySelector('.content').innerHTML = ''; // Clear main content
+        }
+    
+        // Event listener for going back to sidebar
+        document.querySelector('.content').addEventListener('click', showSidebar);
+    </script>
         
 </head>
 
@@ -338,7 +374,7 @@
                 </article>
             </main>
 
-            <aside class="sidebar">
+            <aside class="sidebar" id="sidebar">
                 <h3>Other Articles</h3>
                 <div class="article-card" data-date="2024-07-05">
                     <img src="thumbnail1.jpg" alt="Thumbnail 1" loading="lazy">
