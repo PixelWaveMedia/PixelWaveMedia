@@ -107,39 +107,13 @@
                 .catch(error => console.error('Error loading article:', error));
         }
     </script>    
-    <script>
-        // Function to load article content dynamically
-        function loadArticle(url) {
-            fetch(url)
-                .then(response => response.text())
-                .then(html => {
-                    document.querySelector('.content').innerHTML = html; // Load clicked article into main section
-                    document.querySelectorAll('.article-card').forEach(card => {
-                        card.addEventListener('click', function() {
-                            loadArticle(this.dataset.url); // Load article from sidebar on click
-                            this.style.display = 'none'; // Hide the clicked article in the sidebar
-                        });
-                    });
-                })
-                .catch(error => console.error('Error loading article:', error));
+    <script type="application/json" id="article1">
+        {
+            "title": "How to Create a Stunning Portfolio as a Multimedia Designer",
+            "date": "July 5, 2024",
+            "author": "Admin",
+            "content": "<p>This is the content of your article.</p>"
         }
-    
-        // Initialize the sidebar articles
-        document.querySelectorAll('.article-card').forEach(card => {
-            card.addEventListener('click', function() {
-                loadArticle(this.dataset.url); // Load article from sidebar on click
-                this.style.display = 'none'; // Hide the clicked article in the sidebar
-            });
-        });
-    
-        // Function to go back to the sidebar when clicking on the main content
-        function showSidebar() {
-            document.querySelector('.sidebar').style.display = 'block'; // Show sidebar
-            document.querySelector('.content').innerHTML = ''; // Clear main content
-        }
-    
-        // Event listener for going back to sidebar
-        document.querySelector('.content').addEventListener('click', showSidebar);
     </script>
         
 </head>
@@ -376,7 +350,7 @@
 
             <aside class="sidebar" id="sidebar">
                 <h3>Other Articles</h3>
-                <div class="article-card" data-date="2024-07-05">
+                <div class="article-card" onclick="loadArticle('article1')" data-date="2024-07-05">
                     <img src="thumbnail1.jpg" alt="Thumbnail 1" loading="lazy">
                     <div class="card-content">
                         <h4><a href="create-stunning-portfolio-multimedia-designer.html">How to Create a Stunning Portfolio as a Multimedia Designer</a></h4>
@@ -384,7 +358,7 @@
                         <p>Learn how to create a stunning portfolio as a multimedia designer. Showcase your skills and attract potential clients with these tips.</p>
                     </div>
                 </div>
-                <div class="article-card" data-date="2024-07-03">
+                <div class="article-card" onclick="loadArticle('article1')" data-date="2024-07-03">
                     <img src="thumbnail2.jpg" alt="Thumbnail 2" loading="lazy">
                     <div class="card-content">
                         <h4><a href="top-trends-multimedia-design-2024.html">Top 5 Trends in Multimedia Design for 2024</a></h4>
@@ -392,7 +366,7 @@
                         <p>Stay updated with the top 5 trends in multimedia design for 2024. Incorporate these trends to create modern and relevant designs.</p>
                     </div>
                 </div>
-                <div class="article-card" data-date="2024-07-01">
+                <div class="article-card" onclick="loadArticle('article1')" data-date="2024-07-01">
                     <img src="thumbnail3.jpg" alt="Thumbnail 3" loading="lazy">
                     <div class="card-content">
                         <h4><a href="importance-user-experience-multimedia-design.html">The Importance of User Experience in Multimedia Design</a></h4>
@@ -400,7 +374,7 @@
                         <p>Understand the importance of user experience (UX) in multimedia design. Learn how UX enhances usability, engagement, and satisfaction.</p>
                     </div>
                 </div>
-                <div class="article-card" data-date="2024-06-28">
+                <div class="article-card" onclick="loadArticle('article1')" data-date="2024-06-28">
                     <img src="thumbnail4.jpg" alt="Thumbnail 4" loading="lazy">
                     <div class="card-content">
                         <h4><a href="successful-career-multimedia-designer.html">How to Build a Successful Career as a Multimedia Designer</a></h4>

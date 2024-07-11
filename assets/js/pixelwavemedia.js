@@ -18,7 +18,24 @@ let articlesMetadata = {
     }
 };
 
-
+function loadArticle(articleId) {
+    const article = document.getElementById(articleId);
+    
+    if (article) {
+        const articleData = JSON.parse(article.textContent.trim());
+        
+        // Update article content on post.html
+        document.getElementById('article-title').textContent = articleData.title;
+        document.getElementById('article-date').textContent = articleData.date;
+        document.getElementById('article-author').textContent = articleData.author;
+        document.getElementById('article-content').innerHTML = articleData.content;
+        
+        // Optionally, scroll to top of the page
+        window.scrollTo(0, 0);
+    } else {
+        console.error(`Article with id '${articleId}' not found.`);
+    }
+}
 
 
 
