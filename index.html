@@ -423,7 +423,7 @@
             <!-- blog-wrapper -->
             <div class="blog-card">
                 <div class="blog-card-header">
-                    <img src="assets/imgs/img-1.jpg" class="blog-card-img"
+                    <img src="assets/imgs/pixelwave-media-wacom-tablet.webp" class="blog-card-img"
                         alt="Graphic Design Services by PixelWave Media">
                 </div>
                 <div class="blog-card-body">
@@ -434,14 +434,13 @@
                             <a href="#" id="heart-link"><i class="ti-heart text-danger"></i> <span id="heart-count">234</span></a>
                             <!-- <a href="#"><i class="ti-comment"></i> 123</a> -->
                         </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit
-                            delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium
-                            neque numquam mollitia modi quasi distinctio.</p>
+                        <p>Learn how to create a stunning portfolio as a multimedia designer. Showcase your skills and attract potential clients with these tips.</p>
 
                         <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b>
                         </p>
-                        <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis
-                            cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>
+                        <p>"Discover the essential tools every multimedia designer needs in 2024. From Adobe Creative Cloud for robust editing to Procreate's intuitive digital illustration capabilities, 
+                            explore indispensable software like Figma, Blender, and more. Stay ahead with our curated list tailored for modern creatives seeking to elevate their design workflow and 
+                            creativity." </p>
 
                         <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
                 </div>
@@ -548,11 +547,14 @@
         });
     </script>
     <script>
-        document.getElementById('heart-link').addEventListener('click', function(event) {
-          event.preventDefault(); // Prevent the default link behavior
-          var heartCountElement = document.getElementById('heart-count');
-          var heartCount = parseInt(heartCountElement.textContent);
-          heartCountElement.textContent = heartCount + 1;
+         document.getElementById('heart-link').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            var heartCountElement = document.getElementById('heart-count');
+            var heartCount = parseInt(heartCountElement.textContent);
+            heartCountElement.textContent = heartCount + 1;
+
+            // Disable further clicks
+            this.removeEventListener('click', arguments.callee);
         });
       </script>
 </body>
