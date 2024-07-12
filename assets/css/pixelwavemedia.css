@@ -12421,11 +12421,12 @@ article > section {
   background: rgba(0, 0, 0, 0.8);
   justify-content: center;
   align-items: center;
+  padding: 25%;
 }
 
 .modal img {
   max-width: 90%;
-  max-height: 80%;
+  max-height: auto;
 }
 
 .modal .close {
