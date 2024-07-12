@@ -12386,3 +12386,7 @@ article > section {
       padding: 10px;
   }
 }
+
+.text-danger {
+  color: red;
+}

@@ -427,12 +427,12 @@
                         alt="Graphic Design Services by PixelWave Media">
                 </div>
                 <div class="blog-card-body">
-                    <h5 class="blog-card-title">Consectetur adipisicing elit</h6>
+                    <h5 class="blog-card-title">How to Create a Stunning Portfolio as a Multimedia Designer</h6>
 
                         <p class="blog-card-caption">
                             <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 234</a>
-                            <a href="#"><i class="ti-comment"></i> 123</a>
+                            <a href="#" id="heart-link"><i class="ti-heart text-danger"></i> <span id="heart-count">234</span></a>
+                            <!-- <a href="#"><i class="ti-comment"></i> 123</a> -->
                         </p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit
                             delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium
@@ -547,7 +547,14 @@
             });
         });
     </script>
-
+    <script>
+        document.getElementById('heart-link').addEventListener('click', function(event) {
+          event.preventDefault(); // Prevent the default link behavior
+          var heartCountElement = document.getElementById('heart-count');
+          var heartCount = parseInt(heartCountElement.textContent);
+          heartCountElement.textContent = heartCount + 1;
+        });
+      </script>
 </body>
 
 </html>
