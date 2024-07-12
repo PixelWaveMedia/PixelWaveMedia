@@ -11428,7 +11428,7 @@ p {
   width: 15px;
 }
 
-.blog-card-caption a {
+.blog-card-caption a, .blog-card-caption span {
   margin-right: 10px;
   color: #444;
   text-decoration: none;
