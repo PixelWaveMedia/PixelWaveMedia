@@ -463,33 +463,32 @@
     </section><!-- end of blog section -->
 
     <!-- contact section -->
-    <section class="section" id="contact">
-        <div class="container text-center">
-            <p class="section-subtitle">How can you communicate?</p>
-            <h6 class="section-title mb-5">Contact Me</h6>
-            <!-- contact form -->
-           
-            <form action="send_email.php" method="post" class="contact-form col-md-10 col-lg-8 m-auto">
-                <div class="form-row">
-                    <div class="form-group col-sm-6">
-                        <label for="name">Name:</label>
-                        <input type="text" size="50" id="name" class="form-control" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group col-sm-6">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" class="form-control" name="email" placeholder="Enter Email" requried>
-                    </div>
-                    <div class="form-group col-sm-12">
-                        <label for="message">Message:</label><br>
-                        <textarea name="Message" id="message" rows="6" class="form-control" placeholder="Write Something"></textarea>
-                    </div>
-                    <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
-                    </div>
+<section class="section" id="contact">
+    <div class="container text-center">
+        <p class="section-subtitle">How can you communicate?</p>
+        <h6 class="section-title mb-5">Contact Me</h6>
+        <!-- contact form -->
+        <form id="contactForm" class="contact-form col-md-10 col-lg-8 m-auto">
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="name">Name:</label>
+                    <input type="text" size="50" id="name" class="form-control" name="name" placeholder="Your Name" required>
                 </div>
-            </form><!-- end of contact form -->
-        </div><!-- end of container -->
-    </section><!-- end of contact section -->
+                <div class="form-group col-sm-6">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" class="form-control" name="email" placeholder="Enter Email" required>
+                </div>
+                <div class="form-group col-sm-12">
+                    <label for="message">Message:</label><br>
+                    <textarea name="message" id="message" rows="6" class="form-control" placeholder="Write Something"></textarea>
+                </div>
+                <div class="form-group col-sm-12 mt-3">
+                    <button type="button" onclick="openEmail()" class="btn btn-outline-primary rounded">Send Message</button>
+                </div>
+            </div>
+        </form><!-- end of contact form -->
+    </div><!-- end of container -->
+</section><!-- end of contact section -->
 
     <!-- footer -->
     <div class="container">
@@ -554,6 +553,24 @@
             
             // Construct the mailto link
             var mailtoLink = 'mailto:ronaldordonez06@gmail.com?subject=' + emailSubject + '&body=' + emailBody;
+    
+            // Open the email client with the pre-filled email
+            window.location.href = mailtoLink;
+        }
+    </script>
+    <script>
+        function openEmail() {
+            // Fetch user input
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+    
+            // Construct the email body
+            var emailSubject = encodeURIComponent('Message from ' + name);
+            var emailBody = encodeURIComponent('Email: ' + email + '%0D%0A%0D%0A' + 'Message: ' + message + '%0D%0A%0D%0A');
+    
+            // Construct the mailto link
+            var mailtoLink = 'mailto:info@pixelwave.com?subject=' + emailSubject + '&body=' + emailBody;
     
             // Open the email client with the pre-filled email
             window.location.href = mailtoLink;
