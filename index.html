@@ -567,7 +567,7 @@
     
             // Construct the email body
             var emailSubject = encodeURIComponent('Message from ' + name);
-            var emailBody = encodeURIComponent('Email: ' + email + '%0D%0A%0D%0A' + 'Message: ' + message + '%0D%0A%0D%0A');
+            var emailBody = encodeURIComponent('Email: ' + email + '\n\n' + 'Message: ' + message);
     
             // Construct the mailto link
             var mailtoLink = 'mailto:info@pixelwave.com?subject=' + emailSubject + '&body=' + emailBody;
