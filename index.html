@@ -305,8 +305,7 @@
                         <span>₱</span>
                         <span>30,000</span>
                     </div>
-                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn"
-                        onclick="openEmail('Basic', '₱30,000')">Contact Me</a>
+                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn" onclick="openMail('Basic', '₱30,000')">Contact Me</a>
                 </div>
                 <div class="pricing-card">
                     <div class="pricing-card-header">
@@ -327,8 +326,7 @@
                         <span>₱</span>
                         <span>75,000</span>
                     </div>
-                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn"
-                        onclick="openEmail('Standard', '₱75,000')">Contact Me</a>
+                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn" onclick="openMail('Standard', '₱75,000')">Contact Me</a>
                 </div>
                 <div class="pricing-card">
                     <div class="pricing-card-header">
@@ -349,8 +347,7 @@
                         <span>₱</span>
                         <span>150,000</span>
                     </div>
-                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn"
-                        onclick="openEmail('Premium', '₱150,000')">Contact Me</a>
+                    <a href="#" class="btn btn-primary mt-3 pricing-card-btn" onclick="openMail('Premium', '₱150,000')">Contact Me</a>
                 </div>
             </div><!-- end of pricing wrapper -->
         </div> <!-- end of container -->
@@ -546,7 +543,7 @@
         });
     </script>
     <script>
-        function openEmail(packageName, packagePrice) {
+       function openMail(packageName, packagePrice) {
         // Construct the email body with the selected package details
         var emailSubject = encodeURIComponent('Inquiry about ' + packageName);
         var emailBody = encodeURIComponent('Hello,\n\nI am interested in learning more about your ' + packageName + ' package priced at ' + packagePrice + '. Could you please provide me with more information?\n\nThank you.\n');
