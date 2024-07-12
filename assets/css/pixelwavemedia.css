@@ -225,6 +225,12 @@ label {
   margin-bottom: 0.5rem;
 }
 
+form label {
+  text-align: left;
+  width: 92%;
+  font-weight: 800;
+}
+
 button {
   border-radius: 0;
 }
