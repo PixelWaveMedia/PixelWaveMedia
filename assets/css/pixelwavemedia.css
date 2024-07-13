@@ -11254,8 +11254,12 @@ p {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  margin-bottom: 4rem;
 }
 
+.custom-title {
+  font-size: calc(18px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+}
 .pricing-wrapper .pricing-card {
   display: block;
   border: 1px solid #dee2e6;
