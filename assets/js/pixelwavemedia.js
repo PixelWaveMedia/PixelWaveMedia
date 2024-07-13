@@ -75,10 +75,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Clear current articles in sidebar
-    const articleContainer = document.querySelector('.article-container') || document.createElement('div');
-    articleContainer.className = 'article-container';
-    const sidebar = document.querySelector('.sidebar');
-    sidebar.insertBefore(articleContainer, sidebar.querySelector('.show-more'));
+    // const articleContainer = document.querySelector('.article-container') || document.createElement('div');
+    // articleContainer.className = 'article-container';
+    // const sidebar = document.querySelector('.sidebar');
+    // sidebar.insertBefore(articleContainer, sidebar.querySelector('.show-more'));
 
     // Append sorted articles
     articleContainer.innerHTML = '';
