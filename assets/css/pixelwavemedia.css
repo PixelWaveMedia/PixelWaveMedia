@@ -12515,3 +12515,35 @@ display:none;
 background-color:#fff;
 overflow:hidden
 }
+
+/* breadcrumbs */
+.breadcrumbs {
+  margin-bottom: 10px;
+}
+
+.breadcrumbs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.breadcrumbs li:not(:last-child):after {
+  content: "›";
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #ccc;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: #333;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}

@@ -93,3 +93,27 @@ document.addEventListener('DOMContentLoaded', function() {
         // Here you can implement functionality to load more articles
     });
 });
+
+$(document).ready(function() {
+    // Get the current page's URL
+    var path = window.location.pathname;
+    var segments = path.split('/').filter(function(segment) {
+      return segment !== '';
+    });
+  
+    // Build breadcrumb trail
+    var breadcrumbTrail = '<li><a href="/">Home</a></li>';
+    var currentPath = '/';
+    for (var i = 0; i < segments.length; i++) {
+      currentPath += segments[i] + '/';
+      if (i === segments.length - 1) {
+        breadcrumbTrail += '<li>' + segments[i] + '</li>';
+      } else {
+        breadcrumbTrail += '<li><a href="' + currentPath + '">' + segments[i] + '</a></li>';
+      }
+    }
+  
+    // Update breadcrumbs on the page
+    $('.breadcrumbs ul').html(breadcrumbTrail);
+  });
+  
