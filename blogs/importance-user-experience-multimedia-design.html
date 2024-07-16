@@ -38,9 +38,10 @@
     <link rel="shortcut icon" href="assets/icons/favicon.ico">
 
     <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css" media="print" onload="this.media='all'">
     <!-- Bootstrap + pixelwavemedia main styles -->
-    <link rel="stylesheet" href="assets/css/pixelwavemedia.min.css">
+    <!-- Load non-critical CSS asynchronously -->
+    <link rel="stylesheet" href="assets/css/pixelwavemedia.min.css" media="print" onload="this.media='all'">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWPYE1VKB5"></script>
     <script>
