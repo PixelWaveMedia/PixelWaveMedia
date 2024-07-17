@@ -4336,7 +4336,6 @@ list-style:none
 display:block;
 padding:.5rem 1rem
 }
-
 .nav-link:hover,.nav-link:focus {
 text-decoration:none
 }
@@ -12556,3 +12555,14 @@ overflow:hidden
   .lazy.loaded {
     opacity: 1;
   }
+
+  nav.custom-navbar {
+    height: 60px; /* Reserve space for navbar */
+  }
+  
+  ul.nav > li.item {
+    display: inline-block;
+    width: 100px; /* Reserve space for each nav item */
+    height: 60px;
+  }
+  
