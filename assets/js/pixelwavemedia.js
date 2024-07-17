@@ -116,4 +116,13 @@ $(document).ready(function() {
     // Update breadcrumbs on the page
     $('.breadcrumbs ul').html(breadcrumbTrail);
   });
+
+  $(document).ready(function() {
+    $('.custom-navbar').affix({
+      offset: {
+        top: 100
+      }
+    });
+  });
+  
   

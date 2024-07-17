@@ -43,6 +43,12 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css" media="print" onload="this.media='all'">
     <!-- Load non-critical CSS asynchronously -->
     <link rel="stylesheet" href="assets/css/pixelwavemedia.min.css" media="print" onload="this.media='all'">
+
+    <link rel="preload" href="path/to/bootstrap.css" as="style">
+    <link rel="preload" href="path/to/custom-styles.css" as="style">
+    <link rel="preload" href="path/to/jquery-3.4.1.js" as="script">
+    <link rel="preload" href="path/to/bootstrap.affix.js" as="script">
+
     
      <!-- Google Analytics gtag.js -->
      <script defer src="https://www.googletagmanager.com/gtag/js?id=G-CWPYE1VKB5"></script>
@@ -604,11 +610,11 @@
     </div> <!-- end of page footer -->
 
     <!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/jquery/jquery-3.4.1.js" async></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
     <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js" defer></script>
 
     <!-- pixelwavemedia js -->
     <script src="assets/js/pixelwavemedia.js" defer></script>
