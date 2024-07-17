@@ -12547,3 +12547,12 @@ overflow:hidden
 .breadcrumbs a:hover {
   text-decoration: underline;
 }
+
+.lazy {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .lazy.loaded {
+    opacity: 1;
+  }
