@@ -12575,3 +12575,21 @@ img {
     width: 100%; /* Or specific width */
     height: auto; /* Or specific height */
 }
+
+a.touch-target {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px; /* Centering text vertically */
+    margin: 4px; /* Adding space around each touch target */
+}
+
+.touch-target {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    margin: 8px; /* Ensuring sufficient spacing around each touch target */
+}
