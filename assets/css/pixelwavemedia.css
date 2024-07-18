@@ -2,15 +2,6 @@
 
 @import "https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i";
 
-/*!
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-!
- * Hamburgers
- * @description Tasty CSS-animated hamburgers
- * @author Jonathan Suh @jonsuh
- * @site https://jonsuh.com/hamburgers
- * @link https://github.com/jonsuh/hamburgers*/
 :root {
 --blue:#1e549f;
 --indigo:#695aa6;
@@ -12566,3 +12557,21 @@ overflow:hidden
     height: 60px;
   }
   
+
+  @font-face {
+    font-family: 'Themify';
+    src: url('fonts/themify.woff?-fvbane') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.gstatic.com/s/roboto/v21/8AttGsyxM.woff2') format('woff2');
+    font-display: swap;
+}
+nav.custom-navbar {
+    height: 60px; /* Example height */
+}
+img {
+    width: 100%; /* Or specific width */
+    height: auto; /* Or specific height */
+}
