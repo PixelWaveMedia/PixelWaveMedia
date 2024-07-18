@@ -52,7 +52,7 @@
 
     
      <!-- Google Analytics gtag.js -->
-     <script defer src="https://www.googletagmanager.com/gtag/js?id=G-CWPYE1VKB5"></script>
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWPYE1VKB5"></script>
      <script>
          window.dataLayer = window.dataLayer || [];
          function gtag(){dataLayer.push(arguments);}
@@ -62,11 +62,11 @@
      </script>
 
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MSMBSC69');</script>
+    })(window,document,'script','dataLayer','GTM-MSMBSC69');</script> -->
     <!-- End Google Tag Manager -->
 
     <script>
@@ -556,17 +556,24 @@
         </footer>
     </div> <!-- end of page footer -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" async></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js"></script>
 
     <!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js" async></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js" async></script>
+    <script async src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script defer src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
     <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js" defer></script>
+    <script defer src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
     <!-- pixelwavemedia js -->
-    <script src="assets/js/pixelwavemedia.js" defer></script>
+    <script defer src="assets/js/pixelwavemedia.js"></script>
+
+    <!-- Defer loading of Popper.js and Bootstrap components -->
+    <script defer src="https://pixelwavemedia.github.io/node_modules/popper.js/dist/esm/popper.js"></script>
+    <script defer src="https://pixelwavemedia.github.io/js/src/tooltip.js"></script>
+    <script defer src="https://pixelwavemedia.github.io/js/src/modal.js"></script>
+    <script defer src="https://pixelwavemedia.github.io/js/src/carousel.js"></script>
+    <script defer src="https://pixelwavemedia.github.io/js/src/dropdown.js"></script>
 
     <!-- Custom script to handle logo change on scroll -->
     <script>
@@ -626,15 +633,17 @@
         }
     </script>
     <script>
-        (function(w,d,s,l,i){
-            w[l]=w[l]||[];
-            w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
-            var f=d.getElementsByTagName(s)[0],
-                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
-            j.async=true;
-            j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-            f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-MSMBSC69');
+        window.onload = function() {
+            (function(w,d,s,l,i){
+                w[l]=w[l]||[];
+                w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+                var f=d.getElementsByTagName(s)[0],
+                    j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+                j.async=true;
+                j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+                f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-MSMBSC69');
+        };
     </script>
     <!-- End Google Tag Manager -->
 </body>
