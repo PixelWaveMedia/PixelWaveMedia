@@ -201,3 +201,36 @@ module.exports = {
   },
 };
 
+// main.js
+if (window.Worker) {
+    const worker = new Worker('worker.js');
+    worker.postMessage('start');
+    worker.onmessage = function(e) {
+        console.log('Message from worker:', e.data);
+    };
+}
+
+// worker.js
+self.onmessage = function(e) {
+    // Perform heavy computations here
+    self.postMessage('done');
+};
+
+
+const path = require('path');
+
+module.exports = {
+  entry: {
+    main: './src/index.js',
+  },
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
+  },
+  mode: 'production',
+};

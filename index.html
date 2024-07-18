@@ -49,7 +49,8 @@
     <link rel="preload" href="path/to/custom-styles.css" as="style">
     <link rel="preload" href="path/to/jquery-3.4.1.js" as="script">
     <link rel="preload" href="path/to/bootstrap.affix.js" as="script">
-
+    <link rel="stylesheet" href="non-critical.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="non-critical.css"></noscript>
     
      <!-- Google Analytics gtag.js -->
      <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-CWPYE1VKB5"></script>
@@ -68,7 +69,13 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-MSMBSC69');</script> -->
     <!-- End Google Tag Manager -->
-
+    <script>
+        window.addEventListener('load', function() {
+            var script = document.createElement('script');
+            script.src = 'lazysizes.min.js';
+            document.body.appendChild(script);
+        });
+    </script>
     <script>
         var stylesheet = document.createElement('link');
         stylesheet.rel = 'preload';
