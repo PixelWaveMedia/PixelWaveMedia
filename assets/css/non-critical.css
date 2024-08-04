@@ -1,0 +1,76 @@
+[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button {
+    height:auto
+    }
+    
+    [type="search"] {
+    outline-offset:-2px;
+    -webkit-appearance:none
+    }
+    
+    [type="search"]::-webkit-search-decoration {
+    -webkit-appearance:none
+    }
+    
+    ::-webkit-file-upload-button {
+    font:inherit;
+    -webkit-appearance:button
+    }
+
+    button,[type="button"],[type="reset"],[type="submit"] {
+        -webkit-appearance:button
+        }
+        
+        button:not(:disabled),[type="button"]:not(:disabled),[type="reset"]:not(:disabled),[type="submit"]:not(:disabled) {
+        cursor:pointer
+        }
+        
+        button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {
+        padding:0;
+        border-style:none
+        }
+        
+        input[type="radio"],input[type="checkbox"] {
+        box-sizing:border-box;
+        padding:0
+        }
+        
+        input[type="date"],input[type="time"],input[type="datetime-local"],input[type="month"] {
+        -webkit-appearance:listbox
+        }
+
+        a:hover {
+            color:#493f75;
+            text-decoration:none
+            }
+            
+            a:not([href]):not([tabindex]) {
+            color:inherit;
+            text-decoration:none
+            }
+            
+            a:not([href]):not([tabindex]):hover,a:not([href]):not([tabindex]):focus {
+            color:inherit;
+            text-decoration:none
+            }
+            
+            a:not([href]):not([tabindex]):focus {
+            outline:0
+            }
+
+            [tabindex="-1"]:focus {
+                outline:0!important
+                }
+
+                abbr[title],abbr[data-original-title] {
+                    text-decoration:underline;
+                    -webkit-text-decoration:underline dotted;
+                    text-decoration:underline dotted;
+                    cursor:help;
+                    border-bottom:0;
+                    -webkit-text-decoration-skip-ink:none;
+                    text-decoration-skip-ink:none
+                    }
+
+                    [hidden] {
+                        display:none!important
+                        }

@@ -36,13 +36,12 @@
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css" media="print" onload="this.media='all'">
     <!-- Load non-critical CSS asynchronously -->
-    <link rel="stylesheet" href="assets/css/pixelwavemedia.min.css" media="print" onload="this.media='all'">
-    <link rel="preload" href="path/to/bootstrap.css" as="style">
-    <link rel="preload" href="path/to/custom-styles.css" as="style">
-    <link rel="preload" href="path/to/jquery-3.4.1.js" as="script">
-    <link rel="preload" href="path/to/bootstrap.affix.js" as="script">
-    <link rel="stylesheet" href="non-critical.css" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="non-critical.css"></noscript>
+    <link rel="stylesheet" href="./assets/css/pixelwavemedia.min.css" media="print" onload="this.media='all'">
+    <link rel="preload" href="./assets/css/pixelwavemedia.min.css" as="style">
+    <link rel="preload" href="./assets/vendors/jquery/jquery-3.4.1.js" as="script">
+    <link rel="preload" href="./assets/vendors/bootstrap/bootstrap.affix.js" as="script">
+    <link rel="stylesheet" href="./assets/css/non-critical.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="./assets/css/non-critical.css"></noscript>
     <script>
         window.addEventListener('load', function() {
             var script = document.createElement('script');
@@ -139,8 +138,8 @@
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
             <a class="logo" href="index.html">
-                <img src="assets/imgs/pixel-logo-white.webp" width="224" height="43" alt="PixelWave Media Logos" loading="lazy">
-                <img src="assets/imgs/pixel-logo.webp" width="224" height="43" alt="PixelWave Media Logos" loading="lazy">
+                <img src="./assets/imgs/pixel-logo-white.webp" width="224" height="43" alt="PixelWave Media Logos" loading="lazy">
+                <img src="./assets/imgs/pixel-logo.webp" width="224" height="43" alt="PixelWave Media Logos" loading="lazy">
             </a>
             <ul class="nav">
                 <li class="item">
@@ -192,7 +191,7 @@
             <!-- about wrapper -->
             <div class="about">
                 <div class="about-img-holder">
-                    <img src="assets/imgs/ronanmark.webp" width="400" height="400" class="about-img" alt="Graphic Design Services by PixelWave Media" loading="lazy" class="lazy">
+                    <img src="./assets/imgs/ronanmark.webp" width="400" height="400" class="about-img" alt="Graphic Design Services by PixelWave Media" loading="lazy" class="lazy">
                 </div>
                 <div class="about-caption">
                     <p class="section-subtitle">Who Am I ?</p>
@@ -220,7 +219,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/pencil-case.svg" width="55" height="55" alt="Graphic Design Services by PixelWave Media" class="icon" loading="lazy" class="lazy">
+                            <img src="./assets/imgs/pencil-case.svg" width="55" height="55" alt="Graphic Design Services by PixelWave Media" class="icon" loading="lazy" class="lazy">
                             <h4 class="title">Graphic Design</h4>
                             <p class="subtitle">Proficient in Adobe Creative Suite (Photoshop, Illustrator, InDesign)</p>
                         </div>
@@ -229,7 +228,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/responsive.svg" width="55"height="55" alt="Graphic Design Services by PixelWave Media" class="icon" loading="lazy" class="lazy">
+                            <img src="./assets/imgs/responsive.svg" width="55"height="55" alt="Graphic Design Services by PixelWave Media" class="icon" loading="lazy" class="lazy">
                             <h4 class="title">Video Production</h4>
                             <p class="subtitle">Experienced in video editing and motion graphics using Adobe Premiere Pro and After Effects</p>
                         </div>
@@ -238,7 +237,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/toolbox.svg" width="55" height="55" alt="Graphic Design Services by PixelWave Media"  class="icon" loading="lazy" class="lazy">
+                            <img src="./assets/imgs/toolbox.svg" width="55" height="55" alt="Graphic Design Services by PixelWave Media"  class="icon" loading="lazy" class="lazy">
                             <h4 class="title">Web Design</h4>
                             <p class="subtitle">Knowledgeable in HTML, CSS, JavaScript, and responsive design principles</p>
                         </div>
@@ -247,7 +246,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/analytics.svg" width="55" height="55" alt="Graphic Design Services by PixelWave Media" class="icon" loading="lazy" class="lazy">
+                            <img src="./assets/imgs/analytics.svg" width="55" height="55" alt="Graphic Design Services by PixelWave Media" class="icon" loading="lazy" class="lazy">
                             <h4 class="title">Social Media</h4>
                             <p class="subtitle">Elevate your brand with PixelWave Media's expert social media services, from content creation to campaign management.</p>
                         </div>
@@ -266,7 +265,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <a href="web-designing.html" class="portfolio-card">
-                        <img src="assets/imgs/web-design.webp" width="350" height="350" class="portfolio-card-img" alt="Graphic Design Services by PixelWave Media" loading="lazy" class="lazy">
+                        <img src="./assets/imgs/web-design.webp" width="350" height="350" class="portfolio-card-img" alt="Graphic Design Services by PixelWave Media" loading="lazy" class="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Web Designing</h5>
@@ -277,7 +276,7 @@
                 </div>
                 <div class="col-md-4">
                     <a href="graphics-designing.html" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/graphic-design.webp" width="350" height="350" class="img-responsive rounded" alt="Graphic Design Services by PixelWave Media" loading="lazy" class="lazy">
+                        <img class="portfolio-card-img" src="./assets/imgs/graphic-design.webp" width="350" height="350" class="img-responsive rounded" alt="Graphic Design Services by PixelWave Media" loading="lazy" class="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Graphic Designing</h5>
@@ -288,7 +287,7 @@
                 </div>
                 <div class="col-md-4">
                     <a href="video-editing.html" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/video-production.webp" width="350" height="350" class="img-responsive rounded" alt="Graphic Design Services by PixelWave Media" loading="lazy" class="lazy">
+                        <img class="portfolio-card-img" src="./assets/imgs/video-production.webp" width="350" height="350" class="img-responsive rounded" alt="Graphic Design Services by PixelWave Media" loading="lazy" class="lazy">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Video Editing</h5>
@@ -310,7 +309,7 @@
             <div class="pricing-wrapper">
                 <div class="pricing-card">
                     <div class="pricing-card-header">
-                        <img src="assets/imgs/scooter.svg" width="70" height="70" class="pricing-card-icon" alt="Graphic Design Services by PixelWave Media" loading="lazy" class="lazy">
+                        <img src="./assets/imgs/scooter.svg" width="70" height="70" class="pricing-card-icon" alt="Graphic Design Services by PixelWave Media" loading="lazy" class="lazy">
                     </div>
                     <div class="pricing-card-body">
                         <h4 class="pricing-card-title">Basic</h4>
